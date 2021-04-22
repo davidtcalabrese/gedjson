@@ -66,7 +66,7 @@ The output structure of the `convert.js` script looks like:
 }
 ```
 
-To be parsed into RDF, it will need an output structure like:
+To parse into RDF, it will need an output structure like:
 ```json
 [
   {
