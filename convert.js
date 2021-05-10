@@ -14,7 +14,7 @@ var Ged2Json = require('./ged2Json');
  * @param {String} prop  Property name to set
  * @param {Object} value Value to set the property to
  */
-function setProperty(obj, prop, value) {
+const setProperty = (obj, prop, value) => {
   if (Array.isArray(value) && value.length == 0) {
     delete obj[prop];
   } else if (Array.isArray(value) && value.length == 1) {
@@ -34,7 +34,7 @@ function setProperty(obj, prop, value) {
  * @param {String} prop  Property name to set
  * @param {Object} value Value to set the property to
  */
-function setOrAdd(obj, prop, value) {
+const setOrAdd = (obj, prop, value) => {
   if (typeof obj[prop] === 'undefined') {
     setProperty(obj, prop, value);
   } else {
