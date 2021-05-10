@@ -52,7 +52,7 @@ const setOrAdd = (obj, prop, value) => {
  * @param {Object} obj   Target object
  * @param {String} prop  Property name to get
  */
-function asArray(obj, prop) {
+const asArray = (obj, prop) => {
   if (typeof obj[prop] == 'undefined') return [];
   if (Array.isArray(obj[prop])) return obj[prop];
   return [obj[prop]];
