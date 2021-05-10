@@ -69,7 +69,7 @@ const asArray = (obj, prop) => {
  * @param {String}   prop     Property name to get
  * @param {Function} callback Function to apply to each value
  */
-function parseProperty(obj, prop, callback) {
+const parseProperty = (obj, prop, callback) => {
   if (typeof obj[prop] === 'undefined') {
     return;
   }
